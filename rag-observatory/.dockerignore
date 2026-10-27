@@ -1,0 +1,12 @@
+*
+!Dockerfile
+!requirements-live.txt
+!requirements-documents.txt
+!observatory/
+!observatory/**
+!examples/
+!examples/**
+!tests/
+!tests/**
+**/__pycache__/
+**/*.pyc

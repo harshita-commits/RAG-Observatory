@@ -1,0 +1,12 @@
+{
+  "name": "Example leave policy",
+  "documents": [
+    {"id": "leave-policy-1", "topic": "hr", "source": "policy.md", "text": "Annual leave entitlement is 24 days per calendar year. Unused annual leave carryover is limited to five days. A manager must approve leave requests before the employee books travel."}
+  ],
+  "cases": [
+    {"id": "leave-dev-1", "split": "dev", "slice": "direct", "question": "What is the annual leave entitlement?", "relevant_ids": ["leave-policy-1"], "reference": "Annual leave entitlement is 24 days per calendar year."},
+    {"id": "leave-dev-2", "split": "dev", "slice": "unanswerable", "question": "What is the office cafeteria menu?", "relevant_ids": [], "reference": "I do not know based on the available evidence."},
+    {"id": "leave-test-1", "split": "test", "slice": "direct", "question": "What is the unused annual leave carryover limit?", "relevant_ids": ["leave-policy-1"], "reference": "Unused annual leave carryover is limited to five days."},
+    {"id": "leave-test-2", "split": "test", "slice": "unanswerable", "question": "What is the CEO's birthday?", "relevant_ids": [], "reference": "I do not know based on the available evidence."}
+  ]
+}
